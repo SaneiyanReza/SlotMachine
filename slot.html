@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <h4>Reza Saneiyan</h4>
+    <style>
+        *{
+            font-family: monospace;
+        }
+        body{
+            background-color: lightblue;
+        }
+        .slot-number{
+            font-size: 100px;
+        }
+        .message{
+            text-align: center;
+            display: none;
+            font-size: xx-large;
+            color: darkred;
+        }
+        .center{
+            text-align: center;
+        }
+        .start{
+            margin-top: 5px;
+        }
+        table.center{
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+         .img{
+            display: none;
+            margin: auto;
+            position: relative;
+             width: 50%;
+         }
+        
+    </style>
+
+</head>
+
+<body>
+        <h1 class="center">Play Slot</h1>
+    <div class="center start">
+        <button onclick="spin()">Start</button>
+    </div>
+    <table class="center">
+        <tbody>
+            <tr>
+                <td>
+                    <span id="item1" class="slot-number">-</span>
+                </td>
+                <td>
+                    <span id="item2" class="slot-number">-</span>
+                </td>
+                <td>
+                    <span id="item3" class="slot-number">-</span>
+                </td>
+            </tr>
+    </table>
+
+    <div id="message" class="center message">
+     Congratulations You Win!
+        <img id="image" class="img" src="gold-win.jpg" >
+    </div>
+
+    <audio id="tada">
+        <source src="tada.wav" type="audio/mpeg">
+    </audio>
+
+    <script src="slot.js"></script>
+
+</body>
+</html>
